@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>登录</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />	
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />		
+	</head>
+	<body>
+		<!--logo start-->
+		<div class="cont logo-container">
+			<a href="index.html"><img src="img/logo.svg" width="124px" height="62px"></a>
+		</div>
+		<!--logo end-->
+
+		<!--login start-->
+		<form class="login-wrap">
+			<h3>登录</h3>
+			<input type="text" placeholder="用户名"  required="required" class="form-control" />
+			<input type="password" placeholder="密码" required="required" class="form-control" />
+			<div>
+				<div class="pull-right forget-passowrd">
+					<span>忘记密码？</span>
+					<ul class="list-unstyled">
+						<li>如有问题请联系管理员</li>
+						<li><a href="mailto:zhangxiao@jme.com">zhangxiao@jme.com</a></li>
+						<li><a href="mailto:wangjun@jme.com">wangjun@jme.com</a></li>
+						<li><a href="mailto:wangkai@jme.com">wangkai@jme.com</a></li>
+					</ul>
+				</div>
+				<label class="remeber">记住账号</label>
+			</div>
+			<button type="submit" class="btn btn-block">登录</button>	
+		</form>
+		<!--login end-->
+
+		<!--copyright start-->
+		<div class="copyright">
+			<p>江苏大圆银泰商品合约交易市场版权所有，增值电信业务经营许可证：苏B1-20130063 苏B2-20130224</p>
+			<p>Copyright @ 2015 JSDYYT ALL Rights Reservsd. 苏ICP备12006275号</p>
+		</div>
+		<!--copyright end-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+			$('.remeber').on('click',function(){
+				$(this).toggleClass('active');
+			});
+		</script>
+	</body>
+</html>
